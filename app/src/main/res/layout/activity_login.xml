@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/idLoginEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:hint="@string/loginHintEmail"
+        android:inputType="textEmailAddress"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/idLoginPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLoginEmail"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:hint="@string/loginHintPassword"
+        android:inputType="textPassword"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/idLoginEmail"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@id/idLoginEmail"
+        android:layout_toLeftOf="@id/idLoginEmail"
+        android:src="@drawable/ic_email_black_48dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/idLoginPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@id/idLoginPassword"
+        android:layout_toLeftOf="@id/idLoginPassword"
+        android:src="@drawable/ic_vpn_key_black_48dp" />
+
+    <Button
+        android:id="@+id/idLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLoginPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorBackGroundLogin"
+        android:text="@string/loginButton"
+        android:textColor="@color/colorLogin"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/idLoginForgot"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLoginButton"
+        android:layout_centerInParent="true"
+        android:text="@string/loginForgot"
+        android:textColor="@color/colorSecundary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLoginForgot"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/loginMSG"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
